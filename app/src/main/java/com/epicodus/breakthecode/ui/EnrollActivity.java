@@ -1,11 +1,10 @@
-package com.epicodus.breakthecode;
+package com.epicodus.breakthecode.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
 import android.util.Log;
+
+import com.epicodus.breakthecode.R;
 
 public class EnrollActivity extends AppCompatActivity {
 
