@@ -12,7 +12,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:id="@+id/partnerImage"
         android:src="@drawable/appcamp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -26,8 +26,7 @@
         android:id="@+id/nameLabel"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:linksClickable="false"/>
+        android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,13 +40,13 @@
         android:layout_below="@+id/nameLabel"/>
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="view next nonprofit"
-        android:id="@+id/nextNonprofitButton"
-        android:layout_alignBottom="@+id/descriptionLabel"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="35dp"
+        android:text="Next Partner"
+        android:id="@+id/nextButton"
         android:background="#3399ff"
-        android:textColor="#80ffffff"/>
+        android:textColor="#80ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
 </RelativeLayout>
