@@ -12,4 +12,7 @@
         \n\nThrough partnerships with Portland-based tech companies and women-focused nonprofit organizations,
         Epicodus wants to help start a productive dialogue and create a more supportive environment
         for women choosing careers in programming.</string>
+    <string name="title_activity_non_profit">NonProfitActivity</string>
+    <string name="title_activity_sponsors">SponsorsActivity</string>
+    <string name="title_activity_enroll">EnrollActivity</string>
 </resources>

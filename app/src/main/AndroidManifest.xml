@@ -16,6 +16,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".NonProfitActivity"
+            android:label="@string/title_activity_non_profit"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epicodus.breakthecode.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SponsorsActivity"
+            android:label="@string/title_activity_sponsors"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epicodus.breakthecode.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EnrollActivity"
+            android:label="@string/title_activity_enroll"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epicodus.breakthecode.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
