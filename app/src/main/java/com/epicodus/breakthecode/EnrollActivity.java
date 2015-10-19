@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class EnrollActivity extends AppCompatActivity {
 
@@ -11,27 +12,18 @@ public class EnrollActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enroll);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_enroll, menu);
-        return true;
-    }
+        //debugging tool to see if something works:
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        Toast.makeText(this, "Enroll activity works!!", Toast.LENGTH_LONG).show();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        /* Before the refactor:
 
-        return super.onOptionsItemSelected(item);
+        String message = "Enroll activity works!!";
+        Toast welcomeToast = Toast.makeText(this, message, Toast.LENGTH_LONG);
+        welcomeToast.show();
+
+        */
+
     }
 }

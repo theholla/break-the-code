@@ -26,7 +26,8 @@
         android:id="@+id/nameLabel"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:linksClickable="false"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,4 +39,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/nameLabel"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view next nonprofit"
+        android:id="@+id/nextNonprofitButton"
+        android:layout_alignBottom="@+id/descriptionLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="#3399ff"
+        android:textColor="#80ffffff"/>
 </RelativeLayout>
