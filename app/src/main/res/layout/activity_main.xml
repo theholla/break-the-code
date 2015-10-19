@@ -47,4 +47,34 @@
         android:textColor="@android:color/white"
         android:backgroundTint="@android:color/holo_blue_bright"
         android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is Break the Code?"
+        android:id="@+id/infoLabel"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3a53a4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/enrollButton"
+        android:layout_below="@+id/infoLabel">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/whatIsBreakView"
+            android:text="@string/what_is_break"
+            android:padding="6dp"
+            />
+    </ScrollView>
 </RelativeLayout>
