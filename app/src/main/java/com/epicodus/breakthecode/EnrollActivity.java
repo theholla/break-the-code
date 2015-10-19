@@ -18,19 +18,10 @@ public class EnrollActivity extends AppCompatActivity {
         setContentView(R.layout.activity_enroll);
 
         //debugging tool that speaks to the user:
-
-        Toast.makeText(this, "Enroll activity works!!", Toast.LENGTH_LONG).show();
-
-        /* Before the refactor:
-
-        String message = "Enroll activity works!!";
-        Toast welcomeToast = Toast.makeText(this, message, Toast.LENGTH_LONG);
-        welcomeToast.show();
-
-        */
+        //Toast.makeText(this, "Enroll activity works!!", Toast.LENGTH_LONG).show();
 
         //debugging tool to write to console:
-        // to find in console, filter by log level (returns at and below level) or search
+        //to find in console, filter by log level (returns at and below level) or search
 
         Log.d(TAG, "We're logging from the Enroll Activity OnCreate() method");
 
