@@ -31,14 +31,23 @@ public class PartnerLib {
         ));
 
         mPartners.add(new Partner(
-            "Girl Develop It",
-            "Girl Develop It is a nonprofit organization that provides affordable programs for adult women interested in learning web and software development in a judgment-free environment.",
-            "https://www.girldevelopit.com/",
-            R.drawable.girldevit
+                "Girl Develop It",
+                "Girl Develop It is a nonprofit organization that provides affordable programs for adult women interested in learning web and software development in a judgment-free environment.",
+                "https://www.girldevelopit.com/",
+                R.drawable.girldevit
         ));
     }
 
     public ArrayList<Partner> getPartners() {
         return mPartners;
+    }
+
+    public Partner nextPartner(Partner currentPartner) {
+        int index = mPartners.indexOf(currentPartner);
+        if (index == mPartners.size() - 1) {
+            return mPartners.get(0);
+        } else {
+            return mPartners.get(index + 1);
+        }
     }
 }

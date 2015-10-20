@@ -6,10 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.ImageView;
 import android.widget.Button;
-
+import android.view.View.OnClickListener;
 import com.epicodus.breakthecode.models.Partner;
 import com.epicodus.breakthecode.R;
 import com.epicodus.breakthecode.models.PartnerLib;
@@ -37,6 +38,16 @@ public class NonProfitActivity extends AppCompatActivity {
         mNextButton = (Button) findViewById(R.id.nextButton);
         mPartnerLib = new PartnerLib();
         mCurrentPartner = mPartnerLib.getPartners().get(0);
+
+        mNextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mCurrentPartner = mPartnerLib.nextPartner(mCurrentPartner);
+                setLayoutContent();
+            }
+        });
+
+        setLayoutContent();
     }
 
     private void setLayoutContent() {
