@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NonProfitActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.abc_slide_in_top,R.anim.abc_slide_in_top);
             }
         });
 
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SponsorsActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.abc_grow_fade_in_from_bottom,R.anim.abc_grow_fade_in_from_bottom);
             }
         });
 
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, EnrollActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.abc_popup_enter, R.anim.abc_popup_enter);
             }
         });
     }
