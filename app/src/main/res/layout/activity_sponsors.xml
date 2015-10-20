@@ -12,31 +12,40 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/crowdcompass"
+        android:id="@+id/sponsorImage"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="CrowdCompass"
-        android:id="@+id/nameLabel"
-        android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:linksClickable="false"/>
+        android:src="@drawable/jive"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="CrowdCompass by Cvent creates awesome mobile event apps that increase attendee engagement and produce a strong return on investment. \n\nCrowdCompass' solution is an integrated component of Cvent's event management platform - the most comprehensive in the industry."
-        android:id="@+id/descriptionLabel"
+        android:text=""
+        android:id="@+id/nameLabel"
+        android:layout_below="@+id/sponsorImage"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/description"
+        android:layout_below="@+id/nameLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Sponsor"
+        android:id="@+id/nextButton"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/nameLabel"/>
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_light"/>
 </RelativeLayout>

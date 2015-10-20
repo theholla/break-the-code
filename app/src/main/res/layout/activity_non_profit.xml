@@ -44,9 +44,8 @@
         android:layout_height="wrap_content"
         android:text="Next Partner"
         android:id="@+id/nextButton"
-        android:background="#3399ff"
+        android:background="@android:color/holo_blue_light"
         android:textColor="#80ffffff"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
