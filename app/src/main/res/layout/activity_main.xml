@@ -46,7 +46,8 @@
         android:layout_above="@+id/sponsorsButton"
         android:textColor="@android:color/white"
         android:backgroundTint="@android:color/holo_blue_bright"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -77,4 +78,5 @@
             android:padding="6dp"
             />
     </ScrollView>
+
 </RelativeLayout>
